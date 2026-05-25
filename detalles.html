@@ -150,58 +150,65 @@
 
     <!-- MAIN -->
 
+    <!-- MAIN -->
     <main class="l-main container my-5">
       <!-- TÍTULO -->
       <section class="l-main__header text-center mb-5">
-        <h1 id="detalle-titulo" class="display-4 fw-bold p-5 mt-5">
+        <h1 id="detalle-titulo" class="display-4 fw-bold p-3 mt-3">
           Pronóstico Detallado
         </h1>
       </section>
 
       <!-- TARJETA PRINCIPAL -->
-      <section class="weather-section my-5 ">
+      <section class="weather-section">
         <div class="row justify-content-center mb-5 h-100">
-        <div class="col-12 col-md-8 col-lg-4">
-        <article
-          class="card weather-card-detail shadow-sm p-4"
-        >
-          <div class="weather-card-detail__content p-5 ">
-            <h2 id="detalle-nombre" class="h3 fw-bold mb-3">Nombre comuna</h2>
-            <p
-              id="detalle-temp"
-              class="weather-card-detail__temp fs-1 fw-bold mb-1"
+          <div class="col-12 col-md-8 col-lg-4">
+            <article
+              class="card weather-card-detail text-white text-center p-4 shadow-sm border-0"
             >
-              --°C
-            </p>
-            <img
-              id="detalle-icono"
-              src="#"
-              alt="Icono clima"
-              class="weather-card-detail__icon img-fluid mb-3"
-            />
+              <div class="weather-card-detail__content ">
+                <!-- Nombre de la ciudad -->
+                <h2 id="detalle-nombre" class="h4 mb-0">
+                  Localidad Seleccionada
+                </h2>
 
-            <p class="mb-1">
-              Sensación térmica:
-              <strong id="detalle-sensacion">--°C</strong>
-            </p>
+                <!-- Temperatura -->
+                <p
+                  id="detalle-temp"
+                  class=" display-2 my-3 text-white fw-bolder"
+                >
+                  --°C
+                </p>
 
-            <p class="mb-1 ">
-              Viento:
-              <strong id="detalle-viento">-- km/h</strong>
-            </p>
+                <!-- Icono -->
+                <img
+                  id="detalle-icono"
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  width="80"
+                  class=" img-fluid mb-3"
+                  alt="Clima actual"
+                />
 
-            <p class="mb-3">
-              Humedad:
-              <strong id="detalle-humedad">--%</strong>
-            </p>
+                <!-- Datos -->
+                <div class="weather-card-detail__stats mt-3">
+                  <p class="mb-1 text-white">
+                    Viento: <strong id="detalle-viento">-- km/h</strong>
+                  </p>
+                  <p class="mb-1 text-white">
+                    Humedad: <strong id="detalle-humedad">--%</strong>
+                  </p>
+                  <p class="mb-0 text-white">
+                    Sensación: <strong id="detalle-sensacion">-- °C</strong>
+                  </p>
+                </div>
+              </div>
+            </article>
           </div>
-        </article>
-        </div>
         </div>
 
         <!-- PRONÓSTICO SEMANAL -->
-        <section class="weather-weekly mt-5">
-          <h3 class="h4 fw-bold mb-3 text-center">Pronóstico semanal</h3>
+        <section class="weather-weekly p-4 rounded-5 shadow">
+          <h2 class="text-center text-white mb-4">Pronóstico de la Semana</h2>
 
           <div id="pronostico-semanal" class="row g-3 justify-content-center">
             <!-- JS insertará los 7 días -->
@@ -209,8 +216,8 @@
         </section>
 
         <!-- ESTADÍSTICAS -->
-        <section class="weather-stats mt-5 text-center">
-          <h3 class="h4 fw-bold mb-3 accordion-body">Estadísticas</h3>
+        <section class="weather-stats mt-5 p-4 rounded-5 shadow text-center">
+          <h2 class=" mb-4">Estadísticas</h2>
 
           <p id="stats-max">Máxima semanal: --°C</p>
           <p id="stats-min">Mínima semanal: --°C</p>
@@ -218,8 +225,8 @@
         </section>
 
         <!-- RESUMEN -->
-        <section class="weather-summary mt-5 justify-content-around">
-          <h3 class="h4 fw-bold mb-3 text-center">Resumen del clima</h3>
+        <section class="weather-summary mt-5 p-4 rounded-5 shadow text-center">
+          <h2 class=" mb-4">Resumen del clima</h2>
 
           <p id="resumen-clima" class="text-muted">
             <!-- JS insertará el resumen -->
