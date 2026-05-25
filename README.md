@@ -127,14 +127,14 @@ proyecto-clima/
 
 4. **Ver About**
    - La página "About" contiene información sobre el proyecto.
-   
+
 ## 🎯 Páginas Principales
 
 | Página | Descripción |
 |--------|-------------|
 | `home.html` | Página inicio con las ciudades disponibles |
 | `about.html` | Información sobre el proyecto |
-| `detalles-*.html` | Detalles específicos del clima de cada ciudad incluyendo un pronóstico semanal. |
+| `detalles-*.html` | Detalles específicos del clima de cada ciudad incluyendo un pronóstico semanal, estadística de la temperatura y resumen del clima del día |
 
 ## 🔧 Instalación
 
@@ -144,7 +144,7 @@ No requiere instalación para usarlo en el navegador. Simplemente:
 2. Abre `home.html` en tu navegador web
 3. ¡Disfruta explorando el clima!
 
-> Si trabajas en el desarrollo, los estilos se mantienen en el directorio `sass/` y se compilan en `assets/css/main.css`.
+> Si trabajas en el desarrollo, los estilos se mantienen en el directorio `sass/` y se compilan en `assets/css/main.css`. 
 
 ## 📝 Desarrollo
 
@@ -166,7 +166,7 @@ Este proyecto fue desarrollado durante el bootcamp. Las sugerencias y mejoras so
 
 Este proyecto es de uso educativo.
 
-Para acceder al repositorio en Github--> [gh Vanne-TD/weather-frontend-m3](https://github.com/Vanne-TD/weather-frontend-m3.git)
+Para acceder al repositorio en Github--> [gh Vanne-TD/weather-frontend-m4](https://github.com/Vanne-TD/Weather-frontend-m4.git)
 
 
 ---
